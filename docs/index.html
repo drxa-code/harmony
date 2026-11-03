@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>轻账本 隐私政策</title>
+<style>
+  :root {
+    --text: #1a1a2e;
+    --muted: #5a5a72;
+    --accent: #4a5fd9;
+    --bg: #f6f7fb;
+    --card: #ffffff;
+    --line: #e6e8f0;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "HarmonyOS Sans SC", "Microsoft YaHei", sans-serif;
+    font-size: 15px;
+    line-height: 1.85;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 24px 16px 64px;
+  }
+  .header {
+    background: linear-gradient(135deg, #4a5fd9 0%, #7b6fe0 100%);
+    color: #fff;
+    border-radius: 16px;
+    padding: 28px 24px;
+    margin-bottom: 16px;
+  }
+  .header h1 { font-size: 24px; margin-bottom: 8px; }
+  .header .dates { font-size: 13px; opacity: 0.9; line-height: 1.7; }
+  .summary {
+    background: var(--card);
+    border-radius: 14px;
+    border: 1px solid var(--line);
+    padding: 20px 22px;
+    margin-bottom: 16px;
+  }
+  .summary .title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: var(--accent);
+  }
+  .summary ul { list-style: none; }
+  .summary li {
+    padding: 8px 0 8px 30px;
+    position: relative;
+    border-bottom: 1px dashed var(--line);
+  }
+  .summary li:last-child { border-bottom: none; }
+  .summary li::before {
+    content: "✓";
+    position: absolute;
+    left: 4px;
+    top: 8px;
+    color: #2e9e5b;
+    font-weight: 700;
+  }
+  .section {
+    background: var(--card);
+    border-radius: 14px;
+    border: 1px solid var(--line);
+    padding: 20px 22px;
+    margin-bottom: 14px;
+  }
+  .section h2 {
+    font-size: 17px;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--accent);
+    display: inline-block;
+  }
+  .section p { margin: 8px 0; }
+  .section ul { padding-left: 22px; margin: 8px 0; }
+  .section li { margin: 6px 0; }
+  strong { color: var(--accent); }
+  .contact {
+    background: #eef0fd;
+    border: 1px solid #d5dafb;
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin: 10px 0;
+    font-size: 14px;
+  }
+  .contact a { color: var(--accent); text-decoration: none; }
+  .footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 12px;
+    margin-top: 28px;
+    line-height: 1.8;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <h1>轻账本 隐私政策</h1>
+    <div class="dates">
+      更新日期：2026-09-09<br>
+      生效日期：2026-09-09
+    </div>
+  </div>
+
+  <div class="summary">
+    <div class="title">隐私摘要</div>
+    <ul>
+      <li>不收集任何个人信息</li>
+      <li>数据仅保存在本机应用沙箱，卸载即删除</li>
+      <li>不发起任何网络请求，可完全离线使用</li>
+      <li>未接入任何第三方 SDK，无广告、无统计、无推送</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <p>欢迎你使用「轻账本」（以下简称"本应用"）。在开始使用前，请你仔细阅读本政策。本政策用于说明本应用如何处理（以及为什么不处理）你的信息。</p>
+    <p><strong>我们郑重声明：本应用不收集、不上传、不共享任何用户个人信息。</strong>这不是一句口号，而是由本应用的实现方式决定的——本应用没有服务器、没有账号体系，也不具备联网能力。</p>
+    <p><strong>开发者/运营者：刘昊岩</strong>。本应用由该主体独立开发并运营，不委托任何第三方收集或处理用户信息。</p>
+  </div>
+
+  <div class="section">
+    <h2>1. 信息收集：零收集</h2>
+    <p>本应用不收集你的任何个人信息，包括但不限于：姓名、手机号、邮箱、位置、通讯录、相册、设备标识符、使用行为记录等。本应用不包含任何形式的用户画像、行为分析或数据上报。</p>
+    <p>你在本应用中记录的账目、账户、分类、备注等全部内容，均由你本人主动录入，仅用于在本机呈现给你自己。</p>
+  </div>
+
+  <div class="section">
+    <h2>2. 数据存储：仅保存在本机沙箱</h2>
+    <p>你的全部数据（账目、账户、分类、预算、设置项）仅保存在本机为本应用分配的<strong>应用沙箱目录</strong>中。该目录为系统级私有目录，其他应用无法读取。</p>
+    <p><strong>卸载本应用即删除全部数据，且不可恢复。</strong>如需保留，请在卸载前通过应用内的导出功能自行备份数据文件，导出的文件由你自行保管。</p>
+  </div>
+
+  <div class="section">
+    <h2>3. 网络说明：不发起任何网络请求</h2>
+    <p>本应用<strong>不发起任何网络请求</strong>，不申请网络相关权限，不具备联网能力，可 100% 离线使用。</p>
+    <p>不联网是本应用的刻意设计，而不是功能缺陷：正因为没有网络通道，你的账目数据在技术上就不可能被发送到任何地方。</p>
+  </div>
+
+  <div class="section">
+    <h2>4. 权限说明：默认零权限</h2>
+    <p>本应用<strong>默认不申请任何系统权限</strong>。安装和使用的全过程中，系统不会弹出任何权限申请弹窗。</p>
+    <p>本应用不申请也不使用位置、相机、麦克风、通讯录、存储、日历、传感器等任何敏感权限。涉及选择图片或保存文件的场景，均通过系统提供的免权限选择器（由系统弹出、由你手动确认）完成，本应用只接收你明确选择的临时访问授权。</p>
+    <p>由于默认零权限，也就不存在"拒绝某项权限会影响使用"的情况——你可以在系统设置中查看本应用的权限列表进行核验。</p>
+  </div>
+
+  <div class="section">
+    <h2>5. 第三方 SDK：未接入</h2>
+    <p>本应用<strong>未接入任何第三方 SDK</strong>，包括但不限于广告、统计、埋点、推送、分享、支付、崩溃收集类组件。本应用不含任何第三方代码引起的对外数据传输。</p>
+    <p>本应用同时不含任何广告，也不含任何开屏推广。</p>
+  </div>
+
+  <div class="section">
+    <h2>6. 未成年人保护</h2>
+    <p>本应用为一款面向大众的记账工具，适合 3 岁及以上用户使用。本应用不针对未成年人定向收集任何信息，也不包含面向未成年人的营销内容。未成年人应在监护人指导下使用。</p>
+  </div>
+
+  <div class="section">
+    <h2>7. 你的数据权利</h2>
+    <p>你对自己的数据拥有完全控制权：</p>
+    <ul>
+      <li><strong>查看与导出</strong>：你可以随时在应用内浏览全部数据，并通过导出功能生成数据文件，自行保存与处置；</li>
+      <li><strong>一键清空</strong>：你可以在应用内一键删除全部本地数据，删除后不可恢复；</li>
+      <li><strong>卸载即删</strong>：卸载本应用将同时删除本机沙箱中的全部数据。</li>
+    </ul>
+    <p>除上述由你本人主动触发的操作外，本应用不存在任何其他数据删除或转移渠道。</p>
+  </div>
+
+  <div class="section">
+    <h2>8. 诊断信息导出</h2>
+    <p>当你在「我的 → 导出诊断信息」中主动导出时，本应用会通过系统文件保存面板生成一份诊断 JSON。该文件只含应用版本、数据库就绪/只读状态和最近的技术运行日志；<strong>不含账目、备注、账户或分类名称、密码及密码哈希</strong>。文件只会保存到你在系统面板中选择的位置，由你自行决定是否提供给技术支持。</p>
+  </div>
+
+  <div class="section">
+    <h2>9. 联系我们</h2>
+    <p>如果你对本政策或本应用有任何疑问、意见或建议，欢迎通过客服邮箱与我们联系：</p>
+    <div class="contact">客服邮箱：<a href="mailto:3371920569@qq.com">3371920569@qq.com</a></div>
+    <p>我们将在收到你的反馈后尽快回复。反馈通过你自己的邮箱工具发起，本应用内不设意见反馈入口，也不会代你发送任何信息。</p>
+  </div>
+
+  <div class="section">
+    <h2>10. 政策更新</h2>
+    <p>本政策可能随应用版本更新而调整。发生更新时，我们会在应用内以显著方式提示你查阅更新后的内容；如更新涉及处理方式的实质变化，会在应用内重新征求你的同意。更新后的政策自应用内公示之日起生效。</p>
+  </div>
+
+  <div class="section">
+    <h2>11. 一致性声明</h2>
+    <p>本政策文本同时保存在应用安装包内（resources/rawfile/privacy.md），并保证以下四处内容一致，你可以随时对照核验：</p>
+    <ul>
+      <li>应用内首次启动的隐私摘要弹窗（不可跳过、默认不同意）；</li>
+      <li>应用内「我的 → 隐私政策」常驻入口；</li>
+      <li>华为应用市场（AppGallery Connect）托管的隐私声明（即本页面）；</li>
+      <li>应用安装包内的政策文件。</li>
+    </ul>
+    <p>如发现任何一处与实际行为不符，请通过第 9 节的邮箱向我们反馈，我们将立即核实并更正。</p>
+  </div>
+
+  <div class="footer">
+    轻账本 · 一本干净的本地账<br>
+    开发者/运营者：刘昊岩 · 客服邮箱：3371920569@qq.com
+  </div>
+
+</div>
+</body>
+</html>

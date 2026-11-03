@@ -1,0 +1,83 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "/Users/hajimi/.ohos/config/default_harmony_lwW0Fx6gEwXZ387mzkRiV_TTeUcungQV3gu2ATdx3jQ=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B6959B4660D6D59A15A171D7A9C6732BEAEDB8FC7B4DE4E66ED0030192C9C3350E095013AD23012",
+          "profile": "/Users/hajimi/.ohos/config/default_harmony_lwW0Fx6gEwXZ387mzkRiV_TTeUcungQV3gu2ATdx3jQ=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/hajimi/.ohos/config/default_harmony_lwW0Fx6gEwXZ387mzkRiV_TTeUcungQV3gu2ATdx3jQ=.p12",
+          "storePassword": "0000001B9DE890B5436B0BBDAA97514FDD1AC9B28306A4CA0ECCE06FFC0FEA208707DDC7A68C0D8559063D"
+        }
+      },
+      {
+        "name": "release",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "./signature/lifeledger_release.cer",
+          "keyAlias": "lifeledgerKey",
+          "keyPassword": "LifeLedger@2026",
+          "profile": "./signature/lifeledger_release.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "./signature/lifeledger_release.p12",
+          "storePassword": "LifeLedger@2026"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compatibleSdkVersion": "6.0.0(20)",
+        "targetSdkVersion": "6.0.0(20)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      },
+      {
+        "name": "release",
+        "signingConfig": "release",
+        "compatibleSdkVersion": "6.0.0(20)",
+        "targetSdkVersion": "6.0.0(20)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug"
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default",
+            "release"
+          ]
+        }
+      ]
+    }
+  ]
+}

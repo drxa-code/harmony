@@ -1,0 +1,37 @@
+# Define project specific obfuscation rules here.
+# You can include the obfuscation configuration files in the current module's build-profile.json5.
+#
+# For more details, see
+#   https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-build-obfuscation
+
+# Obfuscation options:
+# -disable-obfuscation: disable all obfuscations
+# -enable-property-obfuscation: obfuscate the property names
+# -enable-toplevel-obfuscation: obfuscate the names in the global scope
+# -compact: remove unnecessary blank spaces and all line feeds
+# -remove-log: remove all console.* statements
+# -print-namecache: print the name cache that contains the mapping from old names to new names
+# -apply-namecache: reuse the given cache file
+
+# Keep options:
+# -keep-property-name: specifies property names that you want to keep
+# -keep-global-name: specifies names that you want to keep in the global scope
+
+# 数据模型与序列化字段保持不混淆（RDB ValuesBucket / JSON 键名依赖字段名）
+-keep-property-name
+id
+ledgerId
+accountId
+toAccountId
+categoryId
+relatedTxId
+amount
+type
+txDate
+note
+imagePaths
+createdAt
+updatedAt
+
+# @Entry/@Component 等装饰器入口类名保持
+-keep-global-name
